@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --sedan: hsl(31, 77%, 52%);
+    --suvs: hsl(184, 100%, 22%);
+    --luxury: hsl(179, 100%, 13%);
+    --white: hsl(0, 0%, 95%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+
+#principal{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 75vh;
+    margin: 90px 10px 90px 10px;
+}
+
+#box-sedans{
+    background-color: var(--sedan);
+    border-radius: 7px 0px 0px 7px;
+}
+
+#box-suvs{
+    background-color: var(--suvs);
+}
+
+#box-lux{
+    background-color: var(--luxury);
+    border-radius: 0px 7px 7px 0px;
+}
+
+img{
+    margin: 40px 0px 0px 40px;
+}
+
+h1{
+    font-family: 'Big Shoulders Display';
+    color: white;
+    margin: 40px 40px 0px 40px;
+    font-size: 40px;
+}
+
+p{
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    color: white;
+    padding-top: 30px;
+    height: 18vh;
+    line-height: 30px;
+    color: var(--white);
+    margin-bottom: 30px;
+    margin: 0px 40px 55px 40px;
+}
+
+button{
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    margin-top: 25%;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    width: 55%;
+    height: 10%;
+    border-radius: 50px;
+    border: 2px solid white;
+    transition: .3s;
+    cursor: pointer;
+    margin: 40px 0px 0px 40px;
+}
+
+.btn-sedans{
+    color: var(--sedan);
+} 
+
+.btn-suvs{
+    color: var(--suvs);
+}
+
+.btn-lux{
+    color: var(--luxury);
+}
+
+button:hover{
+    color: white;
+    background-color: transparent;
+    transition: .3s;
+}
+
+@media(max-width:1110px){
+    #principal{
+        flex-direction: column;
+        width: 600px;
+        height: max-content;
+    }
+
+    #box-sedans{
+        background-color: var(--sedan);
+        border-radius: 7px 7px 0px 0px;
+        padding: 20px;
+    }
+
+    #box-suvs{
+        background-color: var(--suvs);
+        padding: 20px;
+    }
+
+    #box-lux{
+        background-color: var(--luxury);
+        border-radius: 0px 0px 7px 7px;
+        padding: 20px;
+    }
+
+    p{
+        margin-bottom: 0;
+    }
+
+    button{
+        margin: 15%;
+    }
+}
+
+@media(max-width:375px){
+    #principal{
+        flex-direction: column;
+        height: max-content;
+    }
+
+    #box-sedans{
+        background-color: var(--sedan);
+        border-radius: 7px 7px 0px 0px;
+        padding: 10px;
+    }
+
+    #box-suvs{
+        background-color: var(--suvs);
+        padding: 10px;
+    }
+
+    #box-lux{
+        background-color: var(--luxury);
+        border-radius: 0px 0px 7px 7px;
+        padding: 10px;
+    }
+    
+    p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    button{
+        margin-top: 30px;
+    }
+
+}
