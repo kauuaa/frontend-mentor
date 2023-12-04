@@ -7,7 +7,7 @@ O design intuitivo e a disposição eficaz das informações visam proporcionar 
 
 # Visualização
 
-O projeto está hospedado no Netlify e pode ser acessado [aqui](https://responsive-column-cards.netlify.app/](https://preview-card-product-fm.netlify.app/)https://preview-card-product-fm.netlify.app/).
+O projeto está hospedado no Netlify e pode ser acessado [aqui](https://preview-card-product-fm.netlify.app/).
 
 ### Desktop and Mobile Preview
 
