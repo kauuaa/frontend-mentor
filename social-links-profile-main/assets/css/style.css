@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --letras: hsl(0, 0%, 100%);
+    --background: hsl(0, 0%, 8%);
+    --box-perfil: hsl(0, 0%, 12%);
+    --button: hsl(0, 0%, 20%);
+    --button-hover: hsl(75, 94%, 57%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--letras);
+    font-family: 'Inter', 'Arial';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.box {
+    background-color: var(--box-perfil);
+    border-radius: 15px;
+    width: 400px;
+    height: 680px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 10px auto 10px;
+}
+
+.profile-pic {
+    width: 100px;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0px auto 30px auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0px 0px 10px 0px;
+}
+
+h2 {
+    color: var(--button-hover);
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px 0px 30px 0px;
+}
+
+p {
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0px 5px 15px 5px;
+}
+
+button {
+    width: 80%;
+    height: 7%; 
+    cursor: pointer;
+    margin: 10px auto 7.5px auto;
+    background-color: var(--button);
+    color: var(--letras);
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+button:hover {
+    transition: .3s;
+    background-color: var(--button-hover);
+    color: var(--box-perfil);
+}
+
+@media(max-width: 375px){
+    .box {
+        margin: auto 25px auto 25px;
+        height: 600px;
+    }
+
+    .profile-pic {
+        width: 90px;
+    }
+
+    p {
+        margin: 0px auto 20px auto;
+    }
+
+    button {
+        width: 85%;
+    }
+}
